@@ -47,12 +47,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body {
+body, .read {
         padding-top: 0px;
         padding-bottom: 20px;
  		font-family: "San Francisco","Helvetica Neue","Roboto", Helvetica ,Arial ,sans-serif;
         background-color: #ffffff;
-      }
+}
+.read {
+	font-size: 20px;
+}
 h1 {
 	color: #000000;
 	margin-top: 24px;
@@ -210,9 +213,7 @@ div {
 	top: -40px;
 	min-height: 100px;
 }
-a {
-	color: #ffffff;
-}
+
 input {
 	background: #26A69A;
 	border: 0px;
@@ -232,9 +233,6 @@ nav {
     border-bottom: none;
     position: fixed;
 }
-
-
-
 
 /*
  * The following is needed since the dropdowns are <div> elements instead
@@ -272,15 +270,18 @@ nav {
 .dropdown-open {
   background: #e7e7e7;
 }
+.navbar-nav>li>a {
+	color: #000000 !important;
+}
 a {
-	color: #000 !important;
+	color: #7CB342 !important;
 }
 a:focus, a:active {
-	color: #000 !important;
+	color: #7CB342 !important;
 }
 a:hover{
-	color:rgba(0, 0, 0, 0.8) !important;
-	text-decoration:underline;
+	text-decoration:none;
+	opacity: 0.9;
 }
 .pad-1 {
 	margin: 15px;
@@ -307,6 +308,10 @@ a:hover{
     font-size: 24px;
     font-weight: 400;
     text-align: left;
+}
+.sophie {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
 }
 /*
 .stan-2 {
@@ -348,11 +353,11 @@ a:hover{
 }
 h3.free {
 	position: absolute;
-	background-color: #1976D2;
+	background-color: #0D47A1;
 	font-weight: 800;
 	font-size: 24px;
 	padding: 5px 10px;
-	color: #000000;
+	color: #ffffff;
 	text-transform: none;
 }
 .small-text {
@@ -427,12 +432,12 @@ h3.free {
 	position: relative;
 	top: -50px;
 	font-size: 11px;
-    color: #fff;
+    color: #000000;
     font-weight: normal;
     text-transform: uppercase;
     padding: 8px 15px;
     border-radius: 2px;
-    background-color: #006838;
+    background-color: #F57C00;
     z-index: 999;
 }
 .gallery-prop-info {
@@ -519,7 +524,7 @@ img.stanley {
 .btn-success {
     background-color: #7CB342 !important;
     border-color: rgba(0, 0, 0, 0) !important;
-    color: #ffffff !important;
+    color: #000000 !important;
 }
 .contact_detial {
 	float: left;
